@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Tetris</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Web Tetris</div>
+        <div class="setting"><i class="fa-solid fa-bars"></i></div>
+    </header>
+
+    <main class="game-container">
+        <section class="game-console-container">
+            <div id="game-console"></div>
+            <div id="game-status"></div>
+        </section>
+        
+        <section class="game-info">
+            <div class="next-tetromino">
+                <p>Next</p>
+                <div class="next-tetromino-container">
+                    <div id="next-tetromino">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p>Score</p>
+                <p id="score">0</p>
+            </div>
+
+            <div>
+                <p>Lines</p>
+                <p id="lines">0</p>
+            </div>            
+
+            <div>
+                <p>Level</p>
+                <p id="level">1</p>
+            </div>
+            
+            <div class="play-pause">
+                <div id="play-pause"><i class="fa-solid fa-play"></i> <i class="fa-solid fa-pause"></i></div>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/tetris.js"></script>
+</body>
+</html>
